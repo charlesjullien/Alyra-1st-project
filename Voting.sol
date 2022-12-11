@@ -8,12 +8,9 @@ contract Voting is Ownable {
 
     // ----------- VARIABLES ----------- //
 
-    //address immutable i_owner; //the admin address, assigned at begining of contract with constructor();
-
     uint winningProposalId; // the winning proposal's index;
     uint nbrVoters; //the amount of address who actually voted
 
-    //mapping (address => bool) whitelist; //the whitelist of electors - proposers added by the admin;
     mapping (address => Voter) user_data; //
 
     struct Voter { //The variables a voter has 
